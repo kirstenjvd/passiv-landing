@@ -1,0 +1,114 @@
+@import '../../styles/custom-media.css';
+@import '../../styles/custom-properties.css';
+@import '../../styles/home.css';
+@import '../../styles/btn.css';
+
+.security {
+  background: #272629;
+  color: #fff;
+  padding: 30px 20px;
+  @nest & > div{
+    padding: 140px 0;
+  }
+  @nest & h2 {
+    color: #FFFFFF;
+    font-family: var(--base-font-family);
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 5.19px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    @nest & span {
+      color: var(--brand-color);
+    }
+  }
+  @nest & ul {
+    max-width: 786px;
+    font-family: var(--base-font-family);
+    font-weight: 300;
+    font-size: 26px;
+    color: #FFFFFF;
+    letter-spacing: -0.3px;
+    line-height: 46px;
+    @media (--media-max-desktop) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+  @nest & p {
+    max-width: 900px;
+    font-family: var(--base-font-family);
+    font-weight: 300;
+    font-size: 26px;
+    color: #FFFFFF;
+    letter-spacing: -0.3px;
+    line-height: 46px;
+    margin-bottom: 50px;
+    @media (--media-max-desktop) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    @nest & a {
+      font-size: 26px;
+      color: var(--brand-color);
+      font-family: var(--base-font-family);
+      font-weight: 400;
+      @media (--media-max-desktop) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.email-signup {
+  position: relative;
+  vertical-align: top;
+  @nest & label {
+    position: absolute;
+    font-weight: 400;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;transform: translateY(-50%);
+    color: #272629;
+    @nest &:after {
+      background: #fff;
+      content: "";
+      top: 12px;
+      left: -5px;
+      position: absolute;
+      width: 111%;
+      height: 50%;
+      z-index: 0;
+    }
+    @nest & span {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  @nest & input[type="email"] {
+    width: 312px;
+    margin-right: 18px;
+    height: 57px;
+    border: solid 1px #9e9f9f;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 2px 12px;
+    @nest &:focus {
+    }
+    @media (--media-max-desktop) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.socialProof {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #023ca2;
+  font-size: 18px;
+}
+
+.btn1 {
+  vertical-align: top;
+  box-sizing: border-box;
+}

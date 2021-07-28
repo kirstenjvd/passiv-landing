@@ -1,0 +1,47 @@
+@import '../../styles/btn.css';
+@import '../typography.module.css';
+
+.features{
+	margin-bottom: 200px;	
+
+}
+.outerContainer{
+	position: relative;
+	height: 0;
+	width: 100%;
+	z-index: 0;
+	@nest & img{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		transform: translateY(50%);
+		z-index: 0;
+	}
+}
+.contentContainer{
+	display: flex;
+	justify-content: space-between;
+	@nest &:nth-child(1){
+		margin-bottom: 80px;
+	}
+}
+.imgContainer{
+	width: 50%;
+}
+.copy{
+	width: 40%;
+	@nest & h2{
+		margin-bottom: 22px;
+	}
+	@nest & ul{
+		margin-top: 22px;
+		padding-left: 18px;
+	}
+	@nest & li{
+		margin-bottom: 11px;
+		padding-left: 5px;
+	}
+	@nest & li::marker{
+		font-size: 12px;
+	}
+}
