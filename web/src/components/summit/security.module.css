@@ -6,10 +6,7 @@
 .security {
   background: #272629;
   color: #fff;
-  padding: 30px 20px;
-  @nest & > div{
-    padding: 140px 0;
-  }
+  padding: 120px 0 160px;
   @nest & h2 {
     color: #FFFFFF;
     font-family: var(--base-font-family);
@@ -58,32 +55,40 @@
       }
     }
   }
+  @media (--media-max-desktop){
+    padding-bottom: 100px;
+  }
 }
-
+.outerContainer{
+  position: relative;
+  height: 0;
+  width: 100%;
+  z-index: 0;
+  padding: 0;
+  @nest & img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(25%);
+    z-index: 0;
+  }
+  @media (--media-max-desktop){
+    visibility: hidden;
+  }
+}
 .email-signup {
   position: relative;
   vertical-align: top;
-  @nest & label {
-    position: absolute;
-    font-weight: 400;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 16px;transform: translateY(-50%);
-    color: #272629;
-    @nest &:after {
-      background: #fff;
-      content: "";
-      top: 12px;
-      left: -5px;
-      position: absolute;
-      width: 111%;
-      height: 50%;
-      z-index: 0;
-    }
+  @nest & label {     
     @nest & span {
-      position: relative;
+      font-weight: 500;
+      position: absolute;
       z-index: 1;
+      top: 19px;
+      left: 16px;
+      color: #272629;
     }
+    
   }
   @nest & input[type="email"] {
     width: 312px;
@@ -93,10 +98,11 @@
     font-size: 20px;
     line-height: 1.5;
     padding: 2px 12px;
-    @nest &:focus {
-    }
     @media (--media-max-desktop) {
       margin-bottom: 20px;
+    }
+    @media (--media-max-mini) {
+      width: 90%;
     }
   }
 }

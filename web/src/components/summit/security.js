@@ -7,6 +7,8 @@ import { getReferralCode, getTrackingCode, getAppBase, getAPIBase } from "../../
 import axios from "axios";
 import styles from './security.module.css'
 
+import leafs from "../../images/leafs3.svg";
+
 function Security ({  }) {
   const referralCode = getReferralCode();
   const trackingCode = getTrackingCode();
@@ -17,6 +19,9 @@ function Security ({  }) {
   const [signups, setSignups] = useState(null);
   return (
     <section className={styles.security}>
+      <div className={styles.outerContainer}>
+        <img src={leafs} alt="" role="presentation"/>
+      </div>
       <Container>
         <h2 className={styles.H2}>Ready to try Passiv for free?</h2>
         <p>

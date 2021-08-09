@@ -22,6 +22,7 @@
     "gatsby-plugin-facebook-pixel": "^1.0.3",
     "performance-now": "^2.1.0",
     "qs": "^6.5.2",
+    "react-slick": "^0.28.1",
     "update": "^0.4.2"
   }
 }

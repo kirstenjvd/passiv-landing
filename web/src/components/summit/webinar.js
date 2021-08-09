@@ -6,7 +6,7 @@ import {Link} from 'gatsby'
 
 import styles from "./webinar.module.css";
 
-import webinarImg from "../../images/new-dashboard-image.png";
+import webinarImg from "../../images/passiv-robot.png";
 import leafs from "../../images/leafs.svg";
 import icon1 from "../../images/calendar.svg";
 import icon2 from "../../images/alarm-clock.svg";
@@ -57,7 +57,9 @@ function Webinar({}) {
                 </div>
               </div>
             </div>
-            <Link to="../" className={styles.btn1}>Get a free Webinar</Link>
+            <div className={styles.btnContainer}>
+              <Link to="../" className={styles.btn1}>Get a free Webinar</Link>
+            </div>
           </div>
         </div>
       </Container>

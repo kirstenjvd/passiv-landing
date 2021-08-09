@@ -10,6 +10,13 @@
 	display: flex;
 	justify-content: space-between;
 	z-index: 1;
+	@media (--media-max-desktop){
+		flex-direction: column;
+		@nest & div{
+			width: 95%;
+			margin: 0 0 20px;
+		}
+	}
 }
 .imgContainer{
 	width: 50%;
@@ -26,6 +33,9 @@
 		transform: translateY(-25%);
 		z-index: 0;
 	}
+	@media (--media-max-desktop){
+		visibility: hidden;
+	}
 }
 .copyContainer{
 	width: 40%;
@@ -33,19 +43,44 @@
 	@nest & a{
 		padding: 12px 50px;
 	}
+	@media (--media-max-desktop){
+		padding-left: 5%;
+	}
 }
 .iconGrid{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-row-gap: 80px;
 	padding: 60px 0;
+	align-items: left;
+	@media (--media-max-desktop){
+		max-width: 80%;
+	}
+	@media (--media-max-mini){
+		max-width:100%;
+	}
+
 }
 .iconCard{
 	display: flex;
 	justify-content: left;
 	z-index: 1;
 	@nest & img{
+		position: relative;
 		width:  45px;
 		padding-right: 20px;
+		top: -50%;
+		transform: translateY(50%);
+	}
+	@nest & div{
+		margin: 0;
+	}
+}
+
+.btnContainer{
+	@media (--media-max-mini){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }

@@ -2,7 +2,7 @@
 @import '../typography.module.css';
 
 .features{
-	margin-bottom: 200px;	
+	margin-bottom: 80px;	
 
 }
 .outerContainer{
@@ -17,12 +17,27 @@
 		transform: translateY(50%);
 		z-index: 0;
 	}
+	@media (--media-max-desktop){
+		visibility: hidden;
+	}
 }
 .contentContainer{
 	display: flex;
 	justify-content: space-between;
-	@nest &:nth-child(1){
-		margin-bottom: 80px;
+	margin-bottom: 100px;
+	@nest &:nth-child(2){
+		margin-bottom: 0;
+	}
+	@media (--media-max-desktop){
+
+		flex-direction: column;
+		@nest & div{
+			width: 90%;
+			margin: 0 auto;
+		}
+		@nest &:nth-child(2){
+			flex-direction: column-reverse;
+		}
 	}
 }
 .imgContainer{
@@ -43,5 +58,14 @@
 	}
 	@nest & li::marker{
 		font-size: 12px;
+	}
+
+}
+.btnContainer{
+	margin: 78px 0;
+	@media (--media-max-mini){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }

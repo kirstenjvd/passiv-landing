@@ -51,7 +51,9 @@ function Features({}) {
             <img alt="" role="presentation" src={leafTrack}/>
           </div>
         </div>
-        <Link to="../" className={styles.btn1}>See all features</Link>
+        <div className={styles.btnContainer}>
+          <Link to="../" className={styles.btn1}>See all features</Link>
+        </div>
       </Container>
     </section>
   );
