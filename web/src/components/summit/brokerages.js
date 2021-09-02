@@ -22,7 +22,7 @@ import kraken from "../../images/kraken-logo.png";
 import bitbuy from "../../images/bitbuy-logo.png";
 import construction from "../../images/construction.png";
 
-
+import leafs from "../../images/leafs2.svg";
 
 export default class Brokerages extends Component{
   render(){

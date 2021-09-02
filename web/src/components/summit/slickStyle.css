@@ -1,5 +1,10 @@
 @import '../typography.module.css';
 
+
+.slick-slider {
+  margin-left: 7%;
+  width: 100vw;
+}
 .slick-list{
 	padding: 60px 0;
 	@media (--media-max-mini) {

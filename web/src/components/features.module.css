@@ -71,9 +71,6 @@
     @nest & .videoContainer {
       padding: 0;
       margin: 20px 0;
-      background: #fff;
-      box-shadow: 4px 4px 24px 0 rgba(80, 84, 91, 0.44);
-      border-radius: 6px;
       width: 100%;
       @nest & iframe {
         width: 100%;
@@ -97,9 +94,6 @@
     @nest & .videoContainer {
       padding: 0;
       margin: 20px 0;
-      background: #fff;
-      box-shadow: 4px 4px 24px 0 rgba(80, 84, 91, 0.44);
-      border-radius: 6px;
       left: auto;
       transform: none;
       width: 100%;

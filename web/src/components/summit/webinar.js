@@ -42,23 +42,9 @@ function Webinar({}) {
                   <p className={styles.P1}>45min</p>
                 </div>
               </div>
-              <div className={styles.iconCard}>
-                <img src={icon3} alt="icon" role="presentation"/>
-                <div className={styles.text}>
-                  <h3 className={styles.H3}>Format:</h3>
-                  <p className={styles.P1}>Zoom</p>
-                </div>
-              </div>
-              <div className={styles.iconCard}>
-                <img src={icon4} alt="icon" role="presentation"/>
-                <div className={styles.text}>
-                  <h3 className={styles.H3}>Difficulty:</h3>
-                  <p className={styles.P1}>Passiv Beginner</p>
-                </div>
-              </div>
             </div>
             <div className={styles.btnContainer}>
-              <Link to="../" className={styles.btn1}>Get a free Webinar</Link>
+              <Link to="#redeem" className={styles.btn1}>Get a free Webinar</Link>
             </div>
           </div>
         </div>

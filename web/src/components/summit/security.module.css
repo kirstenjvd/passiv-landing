@@ -79,14 +79,15 @@
 .email-signup {
   position: relative;
   vertical-align: top;
+  margin-top: 70px;
   @nest & label {     
     @nest & span {
-      font-weight: 500;
+      font-weight: 600;
       position: absolute;
       z-index: 1;
-      top: 19px;
-      left: 16px;
-      color: #272629;
+      top: -30px;
+      left: 0px;
+      color: #fff;
     }
     
   }

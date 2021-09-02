@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from 'react'
 import { buildImageObj } from "../../lib/helpers";
 import { imageUrlFor } from "../../lib/image-url";
 import Container from "../container";
 import {Link} from 'gatsby'
+import { cn, generateTrackingPath, getAppBase } from '../../lib/helpers';
 
 import styles from "./transform.module.css";
-import icon1 from "../../images/briefcase.svg";
-import icon2 from "../../images/lifeBuoy.svg";
+import icon1 from "../../images/target-sm.svg";
+import icon2 from "../../images/automate-sm.svg";
 import icon3 from "../../images/mailNotification.svg";
 
 
 function Transform({}) {
+
+const [registerPath, setRegisterPath] = useState('/register/');
+  const appBase = getAppBase();
+
+    useEffect(() => {
+    setRegisterPath(generateTrackingPath('/register/'));
+  }, []);
+
   return (
     <section className={styles.transform}>
       <Container>
@@ -49,7 +58,7 @@ function Transform({}) {
           </div>
         </div>
         <div className={styles.btnContainer}>
-          <Link to="../" className={styles.btn1}>Get a free Webinar</Link>
+          <a className={styles.btn1} href={`https://${appBase}${registerPath}`}>Sign Up for Passiv</a>
         </div>
       </Container>
     </section>

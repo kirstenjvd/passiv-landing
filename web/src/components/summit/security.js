@@ -33,13 +33,14 @@ function Security ({  }) {
           <div className={cn(styles.emailContainer, styles.formContainer)}>
             <form className={styles.register} method="get" noValidate action={`https://${appBase}/register/`}>
               <label>
-                <span>Email</span>
+                <span>Your Email Address</span>
               </label>
               <input type="hidden" name="type" />
               <input
                 type="email"
                 required
                 max_length="512"
+                placeholder="example@email.com"
                 className={styles.registerEmail}
                 name="email"
               />

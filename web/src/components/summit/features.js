@@ -6,19 +6,17 @@ import {Link} from 'gatsby'
 
 import styles from "./features.module.css";
 import robot from "../../images/passiv-robot.png";
+import easyGraphic from "../../images/easy-graphic.png";
 import leafTrack from "../../images/leaf-track.png";
 import leafs from "../../images/leafs2.svg";
 
 function Features({}) {
   return (
     <section className={styles.features}>
-      <div className={styles.outerContainer}>
-        <img src={leafs} alt="" role="presentation"/>
-      </div>
       <Container>
         <div className={styles.contentContainer}>
           <div className={styles.imgContainer}>
-            <img alt="" role="presentation" src={robot}/>
+            <img alt="" role="presentation" src={easyGraphic}/>
           </div>
           <div className={styles.copy}>
             <h2 className={styles.H2}>Save time and make investing easy</h2>
@@ -52,7 +50,7 @@ function Features({}) {
           </div>
         </div>
         <div className={styles.btnContainer}>
-          <Link to="../" className={styles.btn1}>See all features</Link>
+          <Link to="/features" className={styles.btn1}>See all features</Link>
         </div>
       </Container>
     </section>

@@ -41,7 +41,10 @@
 	width: 40%;
 	z-index: 1;
 	@nest & a{
-		padding: 12px 50px;
+		padding: 14px 30px 21px;
+		&:hover {
+			padding: 16px 30px 24px;
+		}
 	}
 	@media (--media-max-desktop){
 		padding-left: 5%;

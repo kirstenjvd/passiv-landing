@@ -51,9 +51,6 @@
   display: flex;
   justify-content: center;
   transition: .25s all;
-  @media (--media-max-desktop) {
-    margin-right: 0;
-  }
   @nest &:hover {
     padding: 30px 35px 35px;
     box-shadow: 0 2px 20px 0 rgba(7, 134, 113, 0.66);
