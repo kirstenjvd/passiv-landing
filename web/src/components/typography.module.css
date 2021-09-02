@@ -64,7 +64,32 @@
     line-height: var(--font-large-line-height);
   }
 }
-
+.H2{
+  line-height: 1.25;
+  font-size: 32px;
+  letter-spacing: 0.1px;
+  color: #272629;
+}
+.H3{
+  color: #272629;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+}
+.P1{
+  color: #272629;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+}
+.P2{
+  color: #272629;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.2px;
+}
 .blockQuote {
   background: var(--color-very-light-gray);
 }

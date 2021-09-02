@@ -15,13 +15,13 @@
   },
   "devDependencies": {
     "@sanity/cli": "^0.147.8",
-    "lerna": "^3.13.1"
+    "lerna": "^4.0.0"
   },
   "dependencies": {
     "cypress": "^6.1.0",
     "gatsby-plugin-facebook-pixel": "^1.0.3",
     "performance-now": "^2.1.0",
     "qs": "^6.5.2",
-    "update": "^0.7.4"
+    "update": "^0.4.2"
   }
 }

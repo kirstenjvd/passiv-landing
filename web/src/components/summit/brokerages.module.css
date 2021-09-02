@@ -1,0 +1,63 @@
+@import '../typography.module.css';
+
+.brokerages{
+  position: relative;
+  overflow: hidden;
+  background-color: #F1F1F1;
+  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 88%);
+  padding: 200px 0 150px;
+  margin-top: 100px;
+  @nest & p{
+    max-width: 65%;
+    margin-top: 15px;
+  }
+  @media (--media-max-mini) {
+    @nest & p{
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+
+.post {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0932405);
+  background-color: #ffffff;
+  position: relative;
+  margin: 0px 30px 20px 0;
+  list-style: none;
+  padding: 25px 25px 45px 25px;
+  box-sizing: border-box;
+  border-radius:  5px;
+  height: 338px;
+  text-align: center;
+  @media (--media-min-desktop) {
+    padding: 35px 30px 35px 30px;
+  }
+  @nest & img{
+    height: 30%;
+    margin-top: 20%;
+  }
+}
+.tile{
+  height: 320px;
+  padding: 30px 25px 35px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  background: #FDFDFD;
+  box-shadow: 0 2px 20px 0 rgba(119, 119, 119, 0.12);
+  border-radius: 8px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: .25s all;
+  @nest &:hover {
+    padding: 30px 35px 35px;
+    box-shadow: 0 2px 20px 0 rgba(7, 134, 113, 0.66);
+  }
+  @nest & .subtext {
+    line-height: 1.2em;
+    margin: 0;
+    font-weight: 600;
+  }
+}

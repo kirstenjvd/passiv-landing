@@ -1,0 +1,89 @@
+@import '../typography.module.css';
+
+@import '../../styles/btn.css';
+
+.webinar{
+	padding-bottom: 120px;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+	@media (--media-max-desktop){
+		flex-direction: column;
+		@nest & div{
+			width: 95%;
+			margin: 0 0 20px;
+		}
+	}
+}
+.imgContainer{
+	width: 50%;
+}
+.outerContainer{
+	position: relative;
+	height: 0;
+	width: 100%;
+	z-index: 0;
+	@nest & img{
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: translateY(-25%);
+		z-index: 0;
+	}
+	@media (--media-max-desktop){
+		visibility: hidden;
+	}
+}
+.copyContainer{
+	width: 40%;
+	z-index: 1;
+	@nest & a{
+		padding: 14px 30px 21px;
+		&:hover {
+			padding: 16px 30px 24px;
+		}
+	}
+	@media (--media-max-desktop){
+		padding-left: 5%;
+	}
+}
+.iconGrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 80px;
+	padding: 60px 0;
+	align-items: left;
+	@media (--media-max-desktop){
+		max-width: 80%;
+	}
+	@media (--media-max-mini){
+		max-width:100%;
+	}
+
+}
+.iconCard{
+	display: flex;
+	justify-content: left;
+	z-index: 1;
+	@nest & img{
+		position: relative;
+		width:  45px;
+		padding-right: 20px;
+		top: -50%;
+		transform: translateY(50%);
+	}
+	@nest & div{
+		margin: 0;
+	}
+}
+
+.btnContainer{
+	@media (--media-max-mini){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

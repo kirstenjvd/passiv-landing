@@ -1,0 +1,121 @@
+@import '../../styles/custom-media.css';
+@import '../../styles/custom-properties.css';
+@import '../../styles/home.css';
+@import '../../styles/btn.css';
+
+.security {
+  background: #272629;
+  color: #fff;
+  padding: 120px 0 160px;
+  @nest & h2 {
+    color: #FFFFFF;
+    font-family: var(--base-font-family);
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 5.19px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    @nest & span {
+      color: var(--brand-color);
+    }
+  }
+  @nest & ul {
+    max-width: 786px;
+    font-family: var(--base-font-family);
+    font-weight: 300;
+    font-size: 26px;
+    color: #FFFFFF;
+    letter-spacing: -0.3px;
+    line-height: 46px;
+    @media (--media-max-desktop) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+  @nest & p {
+    max-width: 900px;
+    font-family: var(--base-font-family);
+    font-weight: 300;
+    font-size: 26px;
+    color: #FFFFFF;
+    letter-spacing: -0.3px;
+    line-height: 46px;
+    margin-bottom: 50px;
+    @media (--media-max-desktop) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    @nest & a {
+      font-size: 26px;
+      color: var(--brand-color);
+      font-family: var(--base-font-family);
+      font-weight: 400;
+      @media (--media-max-desktop) {
+        font-size: 20px;
+      }
+    }
+  }
+  @media (--media-max-desktop){
+    padding-bottom: 100px;
+  }
+}
+.outerContainer{
+  position: relative;
+  height: 0;
+  width: 100%;
+  z-index: 0;
+  padding: 0;
+  @nest & img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(25%);
+    z-index: 0;
+  }
+  @media (--media-max-desktop){
+    visibility: hidden;
+  }
+}
+.email-signup {
+  position: relative;
+  vertical-align: top;
+  margin-top: 70px;
+  @nest & label {     
+    @nest & span {
+      font-weight: 600;
+      position: absolute;
+      z-index: 1;
+      top: -30px;
+      left: 0px;
+      color: #fff;
+    }
+    
+  }
+  @nest & input[type="email"] {
+    width: 312px;
+    margin-right: 18px;
+    height: 57px;
+    border: solid 1px #9e9f9f;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 2px 12px;
+    @media (--media-max-desktop) {
+      margin-bottom: 20px;
+    }
+    @media (--media-max-mini) {
+      width: 90%;
+    }
+  }
+}
+
+.socialProof {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #023ca2;
+  font-size: 18px;
+}
+
+.btn1 {
+  vertical-align: top;
+  box-sizing: border-box;
+}

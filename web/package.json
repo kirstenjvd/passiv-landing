@@ -62,6 +62,8 @@
 		"react-reading-progress": "^0.3.0",
 		"react-vimeo": "^2.0.0",
 		"react-youtube": "^7.9.0",
+		"slick-carousel": "^1.8.1",
+		"react-slick": "^0.28.1",
 		"update": "^0.7.4"
 	}
 }

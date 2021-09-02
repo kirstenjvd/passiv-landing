@@ -1,0 +1,37 @@
+@import '../typography.module.css';
+
+
+.slick-slider {
+  margin-left: 7%;
+  width: 100vw;
+}
+.slick-list{
+	padding: 60px 0;
+	@media (--media-max-mini) {
+    padding-top: 80px;
+  }
+}
+
+.slick-prev::before{
+	visibility: hidden;
+}
+.slick-next::before{
+	font-size: 80px;
+	line-height: 1;
+	color: #489F88;
+	font-weight: 100;
+}
+.slick-prev::before, .slick-next::before{
+
+}
+.slick-next{
+	top: -100px;
+	left: 75%;
+	@media (--media-max-mini) {
+    left: 42.5%;
+    top: 10px;
+  }
+}
+.slick-dots li button::before{
+	visibility: hidden;
+}

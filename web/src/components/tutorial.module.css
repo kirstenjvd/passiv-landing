@@ -70,32 +70,12 @@
   padding: 25px 25px 45px 25px;
   box-sizing: border-box;
   border-radius:  5px;
-  height: 338px;
+  height: 327px;
+  width: 320px;
 
   @media (--media-min-desktop) {
     padding: 35px 30px 35px 30px;
-    
     padding-bottom: 25px;
-  }
-  @nest & h2 a {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.3rem;
-    color: #02050F;
-  }
-  @nest & h2 {
-    padding-top: 0;
-    line-height: 1;
-    margin-bottom: 12px;
-  }
-  @nest & p {
-    font-size: 18px;
-    line-height: 32px;
-    color: #02050F;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
   }
 }
 .content {

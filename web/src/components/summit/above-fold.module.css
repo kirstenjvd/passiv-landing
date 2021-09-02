@@ -1,0 +1,132 @@
+@import '../typography.module.css';
+@import "../../styles/home.css";
+@import "../../styles/btn.css";
+
+
+.above-fold {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  transform: translateY(-14%);
+  margin-bottom: -8%;
+  position: relative;
+  z-index: 1;
+  background-color: #B3DBD6;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  @media (--media-max-desktop) {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+  @media (--media-min-desktop) {
+    min-height: 400px;
+    
+    position: relative;
+  }
+  @nest & .btn1 {
+    padding: 18px 31px 19px;
+  }
+  @nest & h1 {
+    color: #272629;
+    font-family: var(--font-family-sans);
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 0.2px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+
+    max-width: 485px;
+    @media (--media-max-desktop) {
+      font-size: 50px;
+      line-height: 1.25;
+      max-width: 100%;
+    }
+    @media (--media-max-mini) {
+      font-size: 38px;
+      font-weight: 700;
+    }
+  }
+}
+.email-signup {
+  position: relative;
+  vertical-align: top;
+  @nest & label {     
+    @nest & span {
+      font-weight: 600;
+      position: absolute;
+      z-index: 1;
+      top: -15px;
+      left: 0px;
+      background: #B3DBD6;
+      padding: 2px 12px;
+    }
+    
+  }
+  @nest & input[type="email"] {
+    width: 312px;
+    margin-right: 18px;
+    height: 57px;
+    border: solid 1px #9e9f9f;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 2px 12px;
+    @media (--media-max-desktop) {
+      margin-bottom: 20px;
+    }
+    @media (--media-max-mini) {
+      width: 90%;
+    }
+  }
+}
+
+.socialProof {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #023ca2;
+  font-size: 18px;
+}
+
+.btn1 {
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+
+.blurb {
+  max-width: 490px;
+  margin-bottom: 50px;
+}
+.ctaContainer {
+  position: relative;
+  z-index: 1;
+  max-width: 60%;
+  display: inline-block;
+  @media (--media-max-desktop) { 
+    max-width: 100%;
+    width: 95%;
+    margin:  0 auto;
+  }
+}
+
+.imgContainer{
+  position: relative;
+  max-width: 45%;
+  height: auto;
+  width: fit-content;
+  display: inline-block;
+  @nest & img{
+    width: 100%;
+  }
+  @nest & video {
+    max-width:  100%;
+  }
+  @media (--media-max-desktop) {
+    padding: 10px 0 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  @media (--media-max-desktop) {
+    flex-direction: column;
+  }
+}
